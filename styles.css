@@ -1,0 +1,652 @@
+/* styles.css */
+
+/* Navbar background color and spacing */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    padding: 15px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Brand (logo) styling */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b3939;
+    background-color: orangered;
+    padding: 10px;
+}
+
+/* Navbar links */
+.nav-link {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Bootstrap blue */
+}
+
+/* Active link color */
+.nav-link.active {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Navbar toggle (mobile view) */
+.navbar-toggler {
+    border-color: #ddd;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Bootstrap default icon */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+
+/* Hero Section Styling */
+.hero-section {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .tag {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    color: orangered;
+    font-weight:bold ;
+
+  }
+  
+  .hero-section h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 1;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .btn{
+    background-color: orangered;
+    color: white;
+    border-radius: 6px;
+    padding: 20px;
+    font-size: 20px;
+
+  }
+
+/* Banner Section Styles */
+.banner-section {
+    background-color: #e8f0f2;
+  }
+  
+  .banner-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .banner-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .arrow:hover {
+    color: #0056b3;
+  }
+  
+
+  /* About Section Styles */
+.about-section {
+    background-color: #f8f9fa;
+  }
+  
+
+  h1 {
+    font-weight: 700;
+    color: #333;
+  }
+  
+
+  .lead {
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  img.rounded-circle {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  .fw-bold,
+  .text-muted{
+    color: orangered;
+    font-weight: 600;
+  }
+  
+
+/* Help Section Styles */
+.help-section {
+    background-color: #ffffff;
+  }
+  
+  .help-section h2 {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .help-section .lead {
+    color: #6c757d;
+  }
+  
+  .card {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  .card-img-top {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+  
+
+.achievements-card {
+    background-color: #ff3c00f5; /* Same background color for the card */
+    border: none; /* Remove card border */
+    border-radius: 8px;
+}
+
+.achievements-body {
+    padding: 30px; /* Padding inside the card */
+}
+
+.achievement-item {
+    padding: 20px; /* Padding for each achievement */
+}
+
+.achievement-image {
+    max-width: 80px; /* Image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+    font-weight: bold; /* Bold title */
+    color: #fff; /* White color for the title */
+}
+
+.achievement-number {
+    font-size: 2rem; /* Size for achievement numbers */
+    color: #fff; /* White color for numbers */
+    font-weight: bold;
+}
+
+.achievement-description {
+    font-size: 1rem; /* Size for achievement descriptions */
+    color: #fff; /* White color for description text */
+    font-weight: bold;
+
+}
+
+.btn-2 {
+    background-color: white;
+    border-radius: 6px;
+    color: orangered;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    margin-top: 10px; /* Add space above the button */
+}
+
+.btn-2:hover {
+    background-color: #ff5e00; /* Optional: Add a hover effect */
+}
+
+/* Popular Services Section Styles */
+.popular-services {
+    padding: 50px 0; /* Padding for top and bottom */
+    color: rgb(255, 81, 0);
+}
+
+.popular-services h2 {
+    color: #ff3c00; /* Heading color */
+}
+
+.text-unmuted {
+    color: #000000;
+    font-size: 3rem; /* Font size */
+    font-weight: 900; /* Bold text */
+    line-height: 1; /* Line height */
+}
+
+.filters {
+    text-align: center; /* Center align the filter buttons */
+}
+
+.btn-3 {
+    color: rgb(0, 0, 0); /* Button text color */
+    background-color: rgb(203, 197, 197); /* Button background color */
+    border: none; /* Remove border */
+    padding: 20px; /* Padding inside buttons */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 10px; /* Spacing between buttons */
+}
+
+.btn-3:hover {
+    background-color: #ff3c00; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.hero-image {
+    max-width: 100%; /* Make sure image is responsive */
+    border-radius: 8px; /* Optional: add border radius to image */
+}
+.popular-services-2{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.popular-services {
+    padding: 50px 0; /* Padding for top and bottom */
+    color: rgb(255, 81, 0);
+    background-image: url('assets/background-image.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+}
+
+.popular-services h2 {
+    color: #ff3c00; /* Heading color */
+}
+
+.text-unmuted {
+    color: #4f4c4c; /* Text color */
+    font-size: 2rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Spacing below the paragraph */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 20px; /* Space below the buttons */
+}
+
+.btn-3 {
+    color: rgb(0, 0, 0); /* Button text color */
+    background-color: rgba(203, 197, 197, 0.8); /* Button background color with transparency */
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Padding inside buttons */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 10px; /* Spacing between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-3:hover {
+    background-color: #ff3c00; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+.backer {
+    background-image: url('./assets/backer.jpeg');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; 
+    min-height: 300px; /* Set a minimum height */
+
+}
+.consultants {
+    background-color: #2d3f52; /* Card background color */
+    margin: 20px; /* Space around the section */
+    margin-top: -60px; /* Negative margin to pull it up */
+    padding: 0px; /* Inner padding for the card section */
+    border-radius: 8px; /* Rounded corners */
+}
+.our-consultenets{
+    font-size:20px ;
+    font-weight: bold;
+    color: orangered;
+
+}
+.ours-2{
+    font-size:40px ;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.consultants-2{
+    padding: 40px;
+}
+.consultants {
+    background-color: #677185; /* Card background color */
+    margin: 20px; /* Space around the section */
+    margin-top: -60px; /* Negative margin to pull it up */
+    padding: 0; /* Inner padding for the card section */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.consultants-2 {
+    padding: 40px;
+}
+
+.consultant-cards {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between cards */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.consultant-card {
+    display: flex; /* Flexbox layout for cards */
+    align-items: center; /* Center items vertically */
+    background: rgba(238, 230, 230, 0.1); /* Slight background for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    flex: 1; /* Allow cards to grow equally */
+    margin-right: 20px; /* Space between cards */
+}
+
+.consultant-card:last-child {
+    margin-right: 0; /* Remove right margin for the last card */
+}
+
+.left {
+    flex: 1; /* Allow left side to take available space */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.right {
+    flex: 2; /* Allow right side to take more space */
+}
+
+.consultant-image {
+    max-width: 100%; /* Ensure image does not overflow */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.our-consultenets {
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.ours-2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+h5{
+    color: orangered;
+}
+
+.consultants-section {
+    padding: 40px 0; /* Padding for top and bottom */
+}
+
+.consultants-title {
+    font-size: 36px; /* Title font size */
+    font-weight: bold; /* Bold title */
+    color: orangered; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+    
+}
+
+.consultants-description {
+    font-size: 18px; /* Description font size */
+    color: #000000; /* Description color */
+    margin-bottom: 30px; /* Space below description */
+}
+
+.consultants-cards-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space between cards */
+    align-items: stretch; /* Align cards to have the same height */
+    flex-wrap: wrap; /* Wrap cards if there's not enough space */
+}
+
+.consultant-card-unique {
+    background: rgba(255, 255, 255, 0.1); /* Background for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 10px; /* Space around each card */
+    width: 30%; /* Width for cards */
+    max-width: 300px; /* Max width for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.consultant-image-unique {
+    max-width: 100%; /* Ensure image fits within card */
+    border-radius: 8px; /* Rounded corners for image */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.consultant-comment-section {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between date and comment */
+    margin-top: 15px; /* Space above comment section */
+}
+
+.consultant-date, .consultant-comment {
+    font-size: 14px; /* Font size for date and comment */
+    color: #ffffff; /* Color for text */
+}
+
+.consultant-name{
+    color: #000000;
+    font-size: 20px;
+}
+.consultant-description,
+.consultant-date,
+.consultant-comment
+{
+    color: gray;
+}
+
+.footer-section {
+    background-color: #2d3f52; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 40px 20px; /* Padding for the footer */
+}
+
+.footer-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.footer-logo {
+    flex: 1; /* Allow logo section to take space */
+}
+
+.footer-logo-image {
+    max-width: 150px; /* Max width for main logo */
+}
+
+.footer-logo-container {
+    margin-bottom: 10px; /* Space below the logo in contact section */
+}
+
+.footer-logo-image-small {
+    max-width: 100px; /* Smaller logo for contact section */
+}
+
+.footer-links,
+.footer-company,
+.footer-subscription,
+.footer-contact {
+    flex: 1; /* Allow sections to take space */
+    margin: 10px; /* Margin around sections */
+}
+
+.footer-links h3,
+.footer-company h3,
+.footer-subscription h3,
+.footer-contact h3 {
+    font-size: 18px; /* Section heading size */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-links ul,
+.footer-company ul {
+    list-style: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li,
+.footer-company li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.footer-links a,
+.footer-company a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover,
+.footer-company a:hover {
+    color: #ff3c00; /* Change color on hover */
+}
+
+.footer-subscription {
+    margin: 10px; /* Margin for subscription section */
+}
+
+.subscription-input {
+    padding: 10px; /* Padding for input */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 5px; /* Space between input and button */
+}
+
+.subscription-button {
+    padding: 10px 15px; /* Padding for button */
+    background-color: #ff3c00; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above bottom text */
+    font-size: 14px; /* Font size for copyright */
+}
